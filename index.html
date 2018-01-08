@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+
+	<title>Train Scheduler</title>
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class ="col s12">
+				<h4>Current Train Schedule</h4>
+				 <table class ="striped">
+      				 <thead>
+          				<tr>
+              				<th>Train Name</th>
+             				<th>Destination</th>
+              				<th>Frequency (min)</th>
+              				<th>Next Arrival</th>
+              				<th>Minutes Away</th>
+          				</tr>
+       				</thead>
+
+       				<tbody id="trains">
+         				 <!-- <tr>
+           					<td>Houston Greyhound</td>
+            				<td>Houston</td>
+           					<td>3800</td>
+           					<td>5:30</td>
+           					<td>18</td>
+         				</tr>
+          				<tr>
+           					<td>Another Bus</td>
+            				<td>Colorado Springs</td>
+            				<td>$30</td>
+            				<td>5:30</td>
+           					<td>18</td>
+          				</tr>
+          				<tr>
+            				<td>RTD</td>
+            				<td>Denver Airport</td>
+            				<td>10</td>
+            				<td>5:15</td>
+           					<td>3</td>
+          				</tr> -->
+        			</tbody>
+      			</table>
+			</div>
+		</div>
+		<br>
+		<br>
+		<!-- <div class="row">
+			<div class="col s12"> -->
+				<h4>Add Train</h4>
+				<!-- Input Field (Materialize) -->
+				 <div class="row">
+   					<form class="col s12">
+      					<div class="row">
+       						<div class="input-field col s12">
+          						<input placeholder="Train Name" id="Train_name" type="text" class="validate">
+          						<label for="Train Name">Train Name</label>
+        					</div>
+        				</div>
+        				<div class="row">
+        					<div class="input-field col s12">
+          						<input placeholder="Destination" id="Destination" type="text" class="validate">
+          						<label for="last_name">Destination</label>
+        					</div>
+      					</div>
+      					<div class="row">
+       						<div class="input-field col s12">
+          						<input placeholder="First Train Time (HH:mm - military time)" id="First_train" type="text" class="validate">
+          						<label for="First_train">First Train Time (HH:mm - military time</label>
+        					</div>
+      					</div>
+      					<div class="row">
+        					<div class="input-field col s12">
+          						<input placeholder ="Frequency (min)" id="frequency" type="text" class="validate">
+          						<label for="frequency">Frequency (min)</label>
+        					</div>
+      					</div>
+      					<button class="btn waves-effect waves-light green" id="new-train" type="submit" name="action">Submit
+    						<i class="material-icons right"></i>
+  						</button>
+      					
+    				</form>
+  				</div>
+        
+			<!-- </div>
+		</div> -->
+	</div>
+	<script rel="javascript" type="text/javascript" src="./assets/Javascript/app.js"></script>
+
+</body>
+</html>
